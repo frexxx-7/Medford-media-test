@@ -1,0 +1,9 @@
+[Thu Oct 03 14:38:57.623130 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.2.34 OpenSSL/1.1.1n configured -- resuming normal operations
+[Thu Oct 03 14:38:57.623518 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Oct 03 14:54:25.237265 2024] [php7:warn] [pid 25] [client 172.19.0.1:41458] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/install/steps/database.php on line 54, referer: http://localhost:443/install/
+[Thu Oct 03 14:54:43.407012 2024] [php7:warn] [pid 36] [client 172.19.0.1:43802] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/install/steps/database.php on line 54, referer: http://localhost:443/install/
+[Thu Oct 03 14:56:03.786323 2024] [php7:warn] [pid 18] [client 172.19.0.1:39340] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/install/steps/database.php on line 54, referer: http://localhost:443/install/
+[Thu Oct 03 14:59:54.637150 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Thu Oct 03 14:59:57.716522 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.2.34 OpenSSL/1.1.1n configured -- resuming normal operations
+[Thu Oct 03 14:59:57.716782 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Oct 03 17:57:19.670700 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
