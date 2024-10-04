@@ -25,10 +25,17 @@
         ]); ?>
         <?php $this->addMainTplJSName('core'); ?>
         <?php $this->addMainTplJSName('modal'); ?>
+        <?php $this->addMainTplCSSName([
+            'styles'
+        ]); ?>
         <?php $this->head(true, false, true); ?>
         <link rel="shortcut icon" href="<?php echo $this->getTemplateFilePath('images/favicons/vector.ico'); ?>">
+        <!--<link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />-->
     </head>
-    <body id="<?php echo $device_type; ?>_device_type" data-device="<?php echo $device_type; ?>" class="d-flex flex-column h-100">
+    <body id="<?php echo $device_type; ?>_device_type" data-device="<?php echo $device_type; ?>" class="d-flex flex-column h-100 main_container">
       
         <?php $this->renderLayoutChild('scheme', ['rows' => $rows]); ?>
         <?php if (!empty($this->options['show_top_btn'])){ ?>
@@ -53,5 +60,6 @@
         <?php if ($config->debug && cmsUser::isAdmin()){ ?>
             <?php $this->renderAsset('ui/debug', ['core' => $core]); ?>
         <?php } ?>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </body>
 </html>

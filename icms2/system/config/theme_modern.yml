@@ -66,16 +66,16 @@ gfont: Roboto
 pagination_template: pagination
 logo: null
 logo_svg:
-  id: 3
-  name: vector-2.svg
-  size: 959
-  path: 000/u1/6/b/vector-2.svg
+  id: 5
+  name: logo.svg
+  size: 6050
+  path: 000/u1/7/9/logo.svg
 logo_small: null
 logo_small_svg:
-  id: 4
-  name: vector-2.svg
-  size: 959
-  path: 000/u1/1/e/vector-2.svg
+  id: 6
+  name: logo.svg
+  size: 6050
+  path: 000/u1/8/d/logo.svg
 custom_scss:
   body-bg:
   body-color:
