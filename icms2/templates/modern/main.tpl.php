@@ -25,6 +25,7 @@
         ]); ?>
         <?php $this->addMainTplJSName('core'); ?>
         <?php $this->addMainTplJSName('modal'); ?>
+        <?php $this->addMainTplJSName('scripts', true); ?>
         <?php $this->addMainTplCSSName([
             'styles'
         ]); ?>

@@ -25,3 +25,9 @@
 [Fri Oct 04 20:02:46.953287 2024] [access_compat:error] [pid 47] [client 172.19.0.1:43444] AH01797: client denied by server configuration: /var/www/html/templates/modern/img, referer: http://localhost:3000/templates/modern/css/styles.css?1727967966
 [Fri Oct 04 20:04:08.475261 2024] [access_compat:error] [pid 50] [client 172.19.0.1:56320] AH01797: client denied by server configuration: /var/www/html/templates/modern/img, referer: http://localhost:3000/templates/modern/css/styles.css?1727967966
 [Fri Oct 04 20:34:05.557987 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Oct 05 09:55:46.764511 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.2.34 OpenSSL/1.1.1n configured -- resuming normal operations
+[Sat Oct 05 09:55:46.778078 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Oct 05 16:39:47.266274 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Oct 05 17:36:18.634791 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.2.34 OpenSSL/1.1.1n configured -- resuming normal operations
+[Sat Oct 05 17:36:18.636340 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Oct 05 21:50:57.886830 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
