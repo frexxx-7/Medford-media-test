@@ -2368,7 +2368,120 @@ input.form-modal-input:-webkit-autofill {
   justify-content: center;
   align-items: center;
 }
+.team_item {
+  position: relative;
+  display: inline-block;
+}
 
+.delete_item,
+.edit_item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.delete_item {
+  left: -40px;
+  transform: translateY(-50%) translateX(-10px);
+}
+
+.edit_item {
+  right: -40px;
+  transform: translateY(-50%) translateX(10px);
+}
+
+.team_item:hover .delete_item,
+.team_item:hover .edit_item {
+  opacity: 1;
+  transform: translateY(-50%);
+  cursor:pointer;
+}
+.modall_add_edit {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal_inner_add_edit {
+  border-radius: 8px;
+  position: relative;
+  background: #0185FF;
+  padding: 20px;
+  border-radius: 15px;
+  z-index: 20000;
+  padding-top: 35px;
+}
+
+.modal_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal_delete_buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.team_item_add_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team_item_add{
+  cursor: pointer;
+}
+.addPhoto {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+}
+.addPhoto p{
+  margin: 0;
+  color:#fff
+}
+.icon {
+  font-size: 50px;
+  cursor: pointer;
+  margin-left: 5px;
+  color:#fff
+}
+.selectImg {
+  margin-top: 10px;
+  max-width: 100%;
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+.is_published_checkBox_container{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.is_published_checkBox_container p{
+  font-size: 18px;
+  color:#fff;
+  margin: 0;
+}
+.is_published_checkBox_container input{
+  width: 20px;
+  height: 20px;
+}
 @media (max-width: 1600px) {
   .section_container.about {
     max-width: 100%;
