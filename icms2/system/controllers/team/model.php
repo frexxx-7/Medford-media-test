@@ -2,7 +2,7 @@
 
 class modelTeam extends cmsModel
 {
-  function getAllTeams()
+  public function getAllTeams()
   {
     $all_team = $this->get('teams');
     $isAdmin = cmsUser::isAdmin();
@@ -13,7 +13,7 @@ class modelTeam extends cmsModel
     ];
   }
 
-  function getOneTeam($itemId)
+  public function getOneTeam($itemId)
   {
     $team_item = $this->getItemById('teams', $itemId);
     $isAdmin = cmsUser::isAdmin();
@@ -23,7 +23,7 @@ class modelTeam extends cmsModel
       'isAdmin' => $isAdmin
     ];
   }
-  function insertOrUpdateTeam($params)
+  public function insertOrUpdateTeam($params)
   {
     if ($params["item_id"])
       //$team_item = $this->insertOrUpdate('teams', ['id' => $params["item_id"], 'active' => $params["active"], 'fullName' => $params["fullName"], 'description' => $params["description"], 'image' => $params["image"]], false);
@@ -34,7 +34,7 @@ class modelTeam extends cmsModel
     return $team_item;
   }
 
-  function deletTeam($itemId){
+  public function deletTeam($itemId){
     $team_item = $this->delete('teams', $itemId);
     return $team_item;
   }
